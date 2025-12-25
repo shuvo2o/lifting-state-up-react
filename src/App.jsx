@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'
 import Counter from './components/Counter'
 import Display from './components/Display'
 import Input from './components/Input'
+import FetchData from './components/FetchData'
 
 const App = () => {
     const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ const App = () => {
         <Counter count={count} handleIncrement={handleIncrement} handleDecrement={handleDecrement}/>
         <Display count={count}/>
         <Input/>
+        <FetchData/>
       </div>
     </div>
   )
