@@ -18,11 +18,11 @@ const App = () => {
     }
 
   return (
-    <div className='flex items-center justify-center h-screen'>
-      <div className='flex'>
-        <Counter count={count} handleIncrement={handleIncrement} handleDecrement={handleDecrement}/>
-        <Display count={count}/>
-        <Input/>
+    <div className='flex items-center justify-center min-h-screen'>
+      <div className='flex flex-col w-full'>
+        {/* <Counter count={count} handleIncrement={handleIncrement} handleDecrement={handleDecrement}/>
+        <Display count={count}/> */}
+        {/* <Input/> */}
         <FetchData/>
       </div>
     </div>
