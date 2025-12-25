@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import Couter from './components/Couter'
+import React, { useState, useRef } from 'react'
+import Counter from './components/Counter'
 import Display from './components/Display'
+import Input from './components/Input'
 
 const App = () => {
     const [count, setCount] = useState(0)
@@ -16,10 +17,11 @@ const App = () => {
     }
 
   return (
-    <div className='h-screen flex items-center justify-center'>
+    <div className='flex items-center justify-center h-screen'>
       <div className='flex'>
-        <Couter count={count} handleIncrement={handleIncrement} handleDecrement={handleDecrement}/>
+        <Counter count={count} handleIncrement={handleIncrement} handleDecrement={handleDecrement}/>
         <Display count={count}/>
+        <Input/>
       </div>
     </div>
   )
