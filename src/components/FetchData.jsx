@@ -8,7 +8,6 @@ const FetchData = () => {
         fetch("https://jsonplaceholder.typicode.com/posts")
         .then(res=> res.json())
         .then((data) =>{
-            // console.log(data)
             setData(data)
         })
     }, []) //once after first render
@@ -33,7 +32,7 @@ const FetchData = () => {
               {post.title.slice(0, 30)}...
             </h3>
             <p className="text-sm leading-relaxed text-purple-100">
-              {post.body.slice(0, 100)}...
+              {post.body.slice(0, 100)}
             </p>
             <button className="px-4 py-2 mt-4 text-xs font-semibold text-purple-700 bg-white rounded-full hover:bg-purple-100">
               Read More
