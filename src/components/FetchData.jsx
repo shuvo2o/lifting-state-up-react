@@ -23,7 +23,7 @@ const FetchData = () => {
         {data.map((post) => (
           <div 
             key={post.id} 
-            className="p-6 text-white transition duration-300 transform shadow-lg rounded-xl hover:scale-105 bg-gradient-to-br from-purple-500 to-indigo-700"
+            className="p-6 text-white transition duration-300 transform shadow-lg rounded-xl hover:scale-105 bg-gradient-to-br from-purple-700 to-indigo-700"
           >
             <span className="px-2 py-1 font-mono text-xs uppercase rounded bg-white/20">
               Post ID: {post.id}
