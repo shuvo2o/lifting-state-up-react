@@ -13,7 +13,7 @@ const Input = () => {
       <input 
         ref={myInputRef} 
         type="text" 
-        placeholder="Ekhane likhun..."
+        placeholder="Enter Your Input..."
         className="p-2 border"
       />
       <button 
